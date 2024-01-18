@@ -48,7 +48,7 @@ body {
 }
 
 .navbar .navbar-nav a {
-  color: #f8d3d3;
+  color: #ffffff;
   display: inline-block;
   font-size: 1.4rem;
   margin: 0 1rem;
@@ -72,7 +72,7 @@ body {
 }
 
 .navbar .navbar-extra a {
-  color: #fff;
+  color: #ffffff;
   margin: 0 0.5rem;
 }
 
@@ -295,7 +295,7 @@ body {
     background-image: url(../picture/hamburger.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 25rem;
+    width: 21rem;
     height: 100vh;
     transition: 0.3s;
     border: 3px solid #1e1006;
@@ -306,18 +306,21 @@ body {
   }
 
   .navbar .navbar-nav a {
-    color: #c7a6a6;
+    color: #ffffff;
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 2rem;
+    /* border: 2px solid #fff; */
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar .navbar-nav a::after {
     transform-origin: 0 0;
   }
   .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.4);
+    transform: scaleX(0.6);
   }
 
   .about .row {
