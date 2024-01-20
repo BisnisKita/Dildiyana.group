@@ -108,22 +108,28 @@ body {
   font-weight: 100;
   line-height: 2rem;
   font-size: 1.5rem;
+  margin-top: 3px;
 }
 .menu-btns {
-  padding: 0.6rem 0;
+  padding: 2px;
   display: flex;
   justify-content: center;
 }
 .menu-btn {
+  border-radius: 2rem;
+  border: 2px solid rgb(23, 22, 22);
+  width: 20rem;
+  height: 3rem;
   font-family: var(--Inter);
   text-transform: uppercase;
   font-size: 1.3rem;
   font-weight: 600;
-  background: none;
-  border: none;
+  /* background: none; */
+  background-color: #0a0404;
+  /* border: none; */
   color: #ff9505;
   display: block;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   cursor: pointer;
   outline: 0;
   transition: opacity 0.4s ease-out;
@@ -144,7 +150,7 @@ body {
   transition: width 0.4s ease-out;
 }
 .menu-btn:hover::after {
-  width: 100%;
+  width: 80%;
 }
 .menu-btn:hover {
   opacity: 0.8;
@@ -161,6 +167,11 @@ body {
 }
 
 .menu .row .menu-card {
+  border-radius: 2rem;
+  background-color: #0a0909;
+  margin: 5px;
+  height: 80%;
+  padding-top: 2rem;
   text-align: center;
   padding-bottom: 1rem;
   animation: fadeIn 2s;
@@ -213,6 +224,16 @@ body {
   border: 3px solid black;
   box-shadow: 3px 1px 7px rgba(81, 75, 75, 0.5);
   /* transition: 0.4s; */
+}
+.menu-card button {
+  margin-top: 10px;
+  padding: 4px;
+  width: 50%;
+  border-radius: 3rem;
+  background-color: var(--primary);
+}
+.menu-card button a {
+  color: #000000;
 }
 
 /* Media Queries */
@@ -274,13 +295,16 @@ body {
   .menu .row .menu-card img {
     /* border-radius: 50%; */
     width: 85%;
-    height: 75%;
+    height: 60%;
     flex-direction: none;
   }
   .menu .row .menu-card {
     width: 45%;
     text-align: center;
     padding-bottom: 1rem;
+  }
+  .menu-card h3 {
+    font-size: 1.4rem;
   }
 }
 
