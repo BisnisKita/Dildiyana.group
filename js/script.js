@@ -72,6 +72,11 @@ document.addEventListener("alpine:init", () => {
       { id: 3, name: "Geprek Sambal Terasi", img: "terasi.jpg", price: 15000 },
       { id: 4, name: "Geprek Sambal Matah", img: "matah.jpg", price: 15000 },
       { id: 5, name: "Geprek Sambal Jontor", img: "jontor.jpg", price: 15000 },
+      { id: 6, name: "Geprek Sambal Ijo", img: "ijo.jpg", price: 15000 },
+      { id: 7, name: "Geprek Sambal Pete", img: "pete.jpg", price: 15000 },
+      { id: 8, name: "Geprek Sambal Terasi", img: "terasi.jpg", price: 15000 },
+      { id: 9, name: "Geprek Sambal Matah", img: "matah.jpg", price: 15000 },
+      { id: 10, name: "Geprek Sambal Jontor", img: "jontor.jpg", price: 15000 },
     ],
   }));
   Alpine.store("cart", {
