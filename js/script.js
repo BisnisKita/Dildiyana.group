@@ -21,13 +21,13 @@ document.querySelector("#shopping-cart-button").onclick = (e) => {
 };
 
 // Klik di luar elemen
-const sc = document.querySelector("#shopping-cart-button");
+// const sc = document.querySelector("#shopping-cart-button");
 
-document.addEventListener("click", function (e) {
-  if (!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
-    shoppingCart.classList.remove("active");
-  }
-});
+// document.addEventListener("click", function (e) {
+//   if (!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
+//     shoppingCart.classList.remove("active");
+//   }
+// });
 // filtering Menu Food
 
 // const menuBtns = document.querySelectorAll(".menu-btn");
