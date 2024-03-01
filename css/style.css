@@ -27,7 +27,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: rgba(21, 189, 198, 0.8);
+  background-color: black;
   border-bottom: 1px solid #0051ff;
   position: fixed;
   top: 0;
@@ -35,7 +35,13 @@ body {
   right: 0;
   z-index: 9999;
 }
-
+.navbar img {
+  width: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-self: unset;
+}
 .navbar .navbar-logo {
   font-size: 2em;
   font-weight: 700;
@@ -85,16 +91,6 @@ body {
 }
 
 /* Hero section */
-.hero {
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-image: url(../picture/y.png);
-  background-position: center;
-  position: relative;
-}
 
 .hero::after {
   content: "";
@@ -233,6 +229,10 @@ body {
 .menu .row {
   flex: 1 1 45rem;
 }
+.hero .row img {
+  width: 100%;
+  margin-top: 100px;
+}
 .menu .row img {
   width: 100%;
 }
@@ -275,7 +275,7 @@ body {
 .contact .row {
   display: flex;
   margin-top: 2rem;
-  background-color: #0c0c0c;
+  background-color: #f9f9f9;
   border-radius: 3rem;
 }
 
@@ -295,7 +295,7 @@ body {
   display: flex;
   align-items: center;
   margin-top: 2rem;
-  background-color: var(--bg);
+  background-color: black;
   border: 1px solid var(--primary);
   padding-left: 2rem;
   border-radius: 3rem;
@@ -306,7 +306,7 @@ body {
   padding: 2rem;
   font-size: 1.7rem;
   background: none;
-  color: #fff;
+  color: #000000;
 }
 
 .contact .row form .btn {
@@ -322,7 +322,7 @@ body {
 
 /* Footer */
 footer {
-  background-color: #ca5100;
+  background-color: #000000;
   text-align: center;
   padding: 1rem 0 3rem;
   margin-top: 3rem;
@@ -333,7 +333,7 @@ footer .socials {
 }
 
 footer .socials a {
-  color: #fff;
+  color: var(--primary);
   margin: 1rem;
 }
 
@@ -451,7 +451,7 @@ footer .credit a {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-image: url(../picture/hamburger.jpg);
+    background-color: rgb(16, 16, 16);
     background-repeat: no-repeat;
     background-size: cover;
     width: 21rem;
