@@ -19,7 +19,11 @@ document.querySelector("#shopping-cart-button").onclick = (e) => {
   shoppingCart.classList.toggle("active");
   e.preventDefault();
 };
-
+// togle
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
 // Klik di luar elemen
 // const sc = document.querySelector("#shopping-cart-button");
 

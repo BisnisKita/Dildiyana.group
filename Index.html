@@ -6,11 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/x-icon" href="picture/logo.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Dildiyana.group</title>
   </head>
   <body>
@@ -78,63 +80,220 @@
         </div>
       </div>
     </section>
-    <br /><br /><br /><br /><br />
 
     <sectio class="menu">
       <div class="row">
-        <img src="picture/sukses.png" alt="" />
         <img src="picture/toko.png" alt="" />
-        <img id="daftar" src="picture/fitur.png" alt="" />
-        <h2 id="menu"><span>Daftar </span>Paket</h2>
-        <p>"Tentu! Makanan kami menghadirkan cita rasa istimewa, bahan berkualitas, dan pengalaman kuliner yang tak terlupakan. Cobalah dan nikmati kelezatannya!"</p>
-        <img src="picture/harga_paket.png" alt="" />
-      </div>
-      <div class="menu-kami">
-        <a href="belanja.html" class="cta">Selengkapnya...</a>
+        <img src="picture/fitur.png" alt="" />
       </div>
     </sectio>
-    <br /><br />
-    <section id="contact" class="contact">
-      <h2><span>Kontak</span> Kami</h2>
-      <p>"Gak usah bingung yang belum tau lokasi restaouran kami,kami siap membantu dan melayani dari semua manu makanan dari kami,,,,"</p>
-
-      <div class="row">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835.4097893350248!2d105.3211287338372!3d-5.119643217328713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40bd27ee0c234f%3A0x5bd64a2713e1045f!2sWarung%20Jontor%20Metro!5e0!3m2!1sid!2sid!4v1705877476743!5m2!1sid!2sid"
-          width="600"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-
-        <form action="">
-          <div class="input-group">
-            <i data-feather="user"></i>
-            <input type="text" placeholder="nama" />
-          </div>
-          <div class="input-group">
-            <i data-feather="mail"></i>
-            <input type="text" placeholder="email" />
-          </div>
-          <div class="input-group">
-            <i data-feather="phone"></i>
-            <input type="text" placeholder="no hp" />
-          </div>
-          <button type="submit" class="btn">kirim pesan</button>
-        </form>
+    <div class="diskon">
+      <div class="promo">
+        <div class="row">
+          <img id="daftar" src="picture/promo.png" alt="" />
+        </div>
       </div>
-    </section>
-    <!-- Contact Section end -->
+      <div class="waktu">
+        <p id="demo" class="waktu"></p>
+      </div>
+    </div>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Mar 30, 2024 24:00:00").getTime();
 
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "h : " + hours + "j : " + minutes + "m : " + seconds + "d";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+    </sectio>
+<section class="menu" style="padding: 30px; background-color: rgb(0, 0, 0);border-bottom:5px groove rgb(213, 255, 5) ; border-radius: 0 0 30px 30px;">
+    <p>"Jangan lewatkan kesempatan istimewa ini! Segera daftar sebagai Member sebelum 30 Maret 2024 untuk merasakan pengalaman bisnis online yang lebih menguntungkan dan menyenangkan bersama kami."</p>
+
+</section>
+
+<section class="menu">
+      <div class="row">
+        <h2 id="menu"><span>Daftar </span>Paket</h2>
+
+        <div class="columns">
+          <ul class="price">
+            <li class="header">Basic</li>
+            <li class="kedua">
+              <p><span>Rp.65.000</span> <span class="badge">20%</span></p>
+              <span>Rp.</span>52.000<span>/thn</span>
+            </li>
+            <li class="isi"><i class="fa fa-check"> </i> Member Dildiyana.group</li>
+            <li class="isi"><i class="fa fa-check"> </i> Memilih 1 Suplier</li>
+            <li class="isi"><i class="fa fa-check"> </i> Foto, Video, dan Deskripsi Produk dari Suplier</li>
+            <li class="isi"><i class="fa fa-check"> </i> Pengiriman Resi Otomatis/Manual</li>
+            <li class="isi"><i class="fa fa-remove"> </i> Video Tutorial Cara Bisnis Online</li>
+            <li class="isi"><i class="fa fa-remove"></i> Grup Informasi Seputar Bisnis Online</li>
+            <li class="isi"><i class="fa fa-remove"> </i> Konsultasi Langsung Bersama Suplier</li>
+            <li class="grey"><a href="#" class="button">Daftar</a></li>
+          </ul>
+        </div>
+        
+        <div class="columns">
+          <ul class="price">
+            <li class="header">Pro</li>
+            <li class="kedua2">
+              <p><span>Rp.150.000</span> <span class="badge">50%</span></p>
+              <span>Rp.</span>75.000<span>/thn</span>
+            </li>
+            <li class="isi"><i class="fa fa-check"> </i> Member Dildiyana.group</li>
+            <li class="isi"><i class="fa fa-check"> </i> Memilih 3 Suplier</li>
+            <li class="isi"><i class="fa fa-check"> </i> Foto, Video, dan Deskripsi Produk dari Suplier</li>
+            <li class="isi"><i class="fa fa-check"> </i> Pengiriman Resi Otomatis/Manual</li>
+            <li class="isi"><i class="fa fa-check"> </i> Video Tutorial Cara Bisnis Online</li>
+            <li class="isi"><i class="fa fa-remove"></i> Grup Informasi Seputar Bisnis Online</li>
+            <li class="isi"><i class="fa fa-remove"> </i> Konsultasi Langsung Bersama Suplier</li>
+            <li class="grey"><a href="#" class="button">Daftar</a></li>
+          </ul>
+        </div>
+        
+        <div class="columns">
+          <ul class="price">
+            <li class="header">Premium</li>
+            <li class="kedua3">
+              <p><span>Rp.500.000</span> <span class="badge">80%</span></p>
+              <span>Rp.</span>100.000<span>/thn</span>
+            </li>
+            <li class="isi"><i class="fa fa-check"> </i> Member Dildiyana.group</li>
+            <li class="isi"><i class="fa fa-check"> </i> Memilih 5 Suplier</li>
+            <li class="isi"><i class="fa fa-check"> </i> Foto, Video, dan Deskripsi Produk dari Suplier</li>
+            <li class="isi"><i class="fa fa-check"> </i> Pengiriman Resi Otomatis/Manual</li>
+            <li class="isi"><i class="fa fa-check"> </i> Video Tutorial Cara Bisnis Online</li>
+            <li class="isi"><i class="fa fa-check"></i> Grup Informasi Seputar Bisnis Online</li>
+            <li class="isi"><i class="fa fa-check"> </i> Konsultasi Langsung Bersama Suplier</li>
+            <li class="grey"><a href="#" class="button">Daftar</a></li>
+          </ul>
+        </div>
+        <img src="picture/sukses.png" alt="" " />
+      </div>
+      
+    </section>
+
+      <img src="picture/testi.webp" alt="" style="width: 100%;border: 5px groove rgb(123, 209, 255);" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <div class="wrapper">
+      <div class="box">
+        <i class="fas fa-quote-left quote"></i>
+        <p>"Saya sangat senang menjadi bagian dari komunitas dropshiper di perusahaan ini! Dengan berbagai fasilitas dan dukungan yang diberikan, saya merasa lebih termotivasi untuk mengembangkan bisnis saya sebagai developer. Terima kasih atas kesempatan ini!"</p>
+        <div class="content">
+          <div class="info">
+            <div class="name">Dicky Aliansyah</div>
+            <div class="job">Developer | Suplier</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="image">
+            <img src="picture/diki1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-quote-left quote"></i>
+        <p>"Sebagai mahasiswa, menjadi dropshipper di perusahaan ini adalah keputusan yang brilian! Dengan fitur yang mudah digunakan dan dukungan yang luar biasa, saya bisa menghasilkan pendapatan tambahan tanpa harus mengganggu jadwal kuliah saya. Terima kasih atas kesempatan ini!"</p>
+        <div class="content">
+          <div class="info">
+            <div class="name">Dwi Tristina</div>
+            <div class="job">Member | Reseller</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="image">
+            <img src="picture/dwi.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-quote-left quote"></i>
+        <p>"Sebagai seorang santri, saya sangat senang telah bergabung sebagai member dan dropshiper di perusahaan ini. Program ini tidak hanya memberi saya kesempatan untuk mendapatkan penghasilan tambahan dengan cara yang fleksibel, tetapi juga memberikan saya pengalaman belajar yang berharga dalam dunia bisnis. Terima kasih perusahaan ini telah memberikan kesempatan yang luar biasa ini untuk saya!" </p>
+        <div class="content">
+          <div class="info">
+            <div class="name">Faizul Rahman</div>
+            <div class="job">Member | Treder</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="image">
+            <img src="picture/faizul.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <sectio class="menu">
+      <div class="row">
+        <img src="picture/img-display.png" alt="" style="border-bottom: 10px groove rgb(43, 167, 255); margin-top: -100px;"/>
+        <img src="picture/shop.png" alt="" style="padding: 10px; margin-bottom: -100px;"/>
+      </div></sectio>
+    <div class="contact">
+      <section class="main">
+        <div class="profile-card">
+          <div class="image">
+            <img src="picture/logo.png" alt="" class="profile-pic" />
+          </div>
+          <div class="data">
+            <h2>Dildiyana.group</h2>
+            <span>Customer Service</span>
+          </div>
+          <div class="row">
+            <div class="info">
+              <h3>Jam Kerja</h3>
+              <span>08:00 - 21:00</span>
+            </div>
+          </div>
+          <div class="buttons">
+            <a href="#" class="btn">Chat</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Contact Section end -->
+    
     <!-- Footer start -->
     <footer>
-      <div class="socials">
+      <!-- <div class="socials">
         <a href="#"><i data-feather="instagram"></i></a>
         <a href="#"><i data-feather="twitter"></i></a>
         <a href="#"><i data-feather="facebook"></i></a>
-      </div>
+      </div> -->
 
       <div class="links">
         <a href="#home">Home</a>
