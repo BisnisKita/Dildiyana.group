@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/x-icon" href="picture/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/paket.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Dildiyana.group</title>
+  </head>
+  <body>
+    <!--Navabr start-->
+    <nav class="navbar">
+   <div><img src="picture/logo.png" alt="" /></div>
+
+   <a href="#" class="navbar-logo">Dildiyana.<span>group</span></a>
+
+   <div class="navbar-nav">
+     <a href="home.html">Home</a>
+     <a href="home.html#about">Tentang Kami</a>
+     <a href="home.html#menu">Daftar Paket</a>
+     <a href="home.html#testimoni">Testimoni</a>
+     <a href="home.html#contact">Kontak</a>
+   </div>
+
+   <div class="navbar-extra">
+     <a href="home.html#menu" id="hamburger-menu"><i data-feather="menu"></i></a>
+   </div>
+ </nav>
+   
+ 
+ <div class="diskon">
+   <div class="promo">
+     <div class="row">
+       <img id="daftar" src="picture/promo.png" alt="" />
+     </div>
+   </div>
+
+<div class="limit" id="menu">
+  
+    <p id="demo" class="waktu"></p>
+    
+  
+</div>
+ <script>
+   // Set the date we're counting down to
+   var countDownDate = new Date("Mar 30, 2024 24:00:00").getTime();
+   // Update the count down every 1 second
+   var x = setInterval(function() {
+     // Get today's date and time
+     var now = new Date().getTime();
+     // Find the distance between now and the count down date
+     var distance = countDownDate - now;
+     // Time calculations for days, hours, minutes and seconds
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+     // Output the result in an element with id="demo"
+     document.getElementById("demo").innerHTML = days + "h : " + hours + "j : " + minutes + "m : " + seconds + "d";
+     // If the count down is over, write some text
+     if (distance < 0) {
+       clearInterval(x);
+       document.getElementById("demo").innerHTML = "EXPIRED";
+     }
+   }, 1000);
+ </script>
+</div>
+ </sectio>
+
+
+
+<section class="menu">
+  <div class="row">
+    <!-- <h2 id="menu"><span>Daftar </span>Paket</h2> -->
+
+    <div class="columns">
+      <ul class="price">
+        <li class="header">Basic</li>
+        <li class="kedua">
+          <p><span>Rp.65.000</span> <span class="badge">20%</span></p>
+          <span>Rp.</span>52.000<span>/thn</span>
+        </li>
+
+        <style>
+            
+.form-group {
+    margin-bottom: 10px;
+    padding: 0 4px;
+}
+
+
+label {
+    font-size: 17px;
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+
+.form-select,
+input[type="text"],
+input[type="number"],
+textarea {
+    font-size: 15px;
+    width: 100%;
+    padding: 13px;
+    border: 1.5px groove rgb(0, 0, 0);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+        </style>
+          <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="number">No Hp/WA:</label>
+                <input type="number" id="number" name="number" required>
+            </div>
+           
+              <div class="form-group">
+                  <label>Provinsi:</label>
+                  <select class="form-select" name="provinsi" id="provinsi">
+                      <option>Pilih</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label>Kab/Kota:</label>
+                  <select class="form-select" name="kota" id="kota">
+                      <option>Pilih</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label>Kecamatan:</label>
+                  <select class="form-select" name="kecamatan" id="kecamatan">
+                      <option>Pilih</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label>Kelurahan:</label>
+                  <select class="form-select" name="kelurahan" id="kelurahan">
+                      <option>Pilih</option>
+                  </select>
+              </div>
+              <li class="grey" type="submit" onclick="gotowhatsapp();"><a href="#" class="button">Daftar</a></li>
+        </form>
+      
+        <!--  -->
+      </ul>
+    </div>
+
+   
+    
+    <!-- Contact Section end -->
+    
+    <!-- Footer start -->
+    <footer>
+      <!-- <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div> -->
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class=
+      "credit">
+        <p>Created by <a href="">dickyaliansyah</a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- Script daerah se indonesia -->
+
+    <script> fetch(`https://kanglerian.github.io/api-wilayah-indonesia/api/provinces.json`)
+      .then((response) => response.json())
+      .then((provinces) => {
+          var data = provinces;
+          var tampung = `<option>Pilih</option>`;
+          data.forEach((element) => {
+              tampung += `<option data-prov="${element.id}" value="${element.name}">${element.name}</option>`;
+          });
+          document.getElementById("provinsi").innerHTML = tampung;
+      });
+      </script>
+<script>
+  const selectProvinsi = document.getElementById('provinsi');
+  const selectKota = document.getElementById('kota');
+  const selectKecamatan = document.getElementById('kecamatan');
+  const selectKelurahan = document.getElementById('kelurahan');
+
+  selectProvinsi.addEventListener('change', (e) => {
+      var provinsi = e.target.options[e.target.selectedIndex].dataset.prov;
+      fetch(`https://kanglerian.github.io/api-wilayah-indonesia/api/regencies/${provinsi}.json`)
+          .then((response) => response.json())
+          .then((regencies) => {
+              var data = regencies;
+              var tampung = `<option>Pilih</option>`;
+              document.getElementById('kota').innerHTML = '<option>Pilih</option>';
+              document.getElementById('kecamatan').innerHTML = '<option>Pilih</option>';
+              document.getElementById('kelurahan').innerHTML = '<option>Pilih</option>';
+              data.forEach((element) => {
+                  tampung += `<option data-prov="${element.id}" value="${element.name}">${element.name}</option>`;
+              });
+              document.getElementById("kota").innerHTML = tampung;
+          });
+  });
+
+  selectKota.addEventListener('change', (e) => {
+      var kota = e.target.options[e.target.selectedIndex].dataset.prov;
+      fetch(`https://kanglerian.github.io/api-wilayah-indonesia/api/districts/${kota}.json`)
+          .then((response) => response.json())
+          .then((districts) => {
+              var data = districts;
+              var tampung = `<option>Pilih</option>`;
+              document.getElementById('kecamatan').innerHTML = '<option>Pilih</option>';
+              document.getElementById('kelurahan').innerHTML = '<option>Pilih</option>';
+              data.forEach((element) => {
+                  tampung += `<option data-prov="${element.id}" value="${element.name}">${element.name}</option>`;
+              });
+              document.getElementById("kecamatan").innerHTML = tampung;
+          });
+  });
+  selectKecamatan.addEventListener('change', (e) => {
+      var kecamatan = e.target.options[e.target.selectedIndex].dataset.prov;
+      fetch(`https://kanglerian.github.io/api-wilayah-indonesia/api/villages/${kecamatan}.json`)
+          .then((response) => response.json())
+          .then((villages) => {
+              var data = villages;
+              var tampung = `<option>Pilih</option>`;
+              document.getElementById('kelurahan').innerHTML = '<option>Pilih</option>';
+              data.forEach((element) => {
+                  tampung += `<option data-prov="${element.id}" value="${element.name}">${element.name}</option>`;
+              });
+              document.getElementById("kelurahan").innerHTML = tampung;
+          });
+  });
+</script>
+
+
+
+<!-- whatsapp -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    function gotowhatsapp() {
+
+        // var jumlah = document.getElementById("jumlah").value;
+        var nama = document.getElementById("name").value;
+        var nomor = document.getElementById("number").value;
+        var prov = document.getElementById("provinsi").value;
+        var kota = document.getElementById("kota").value;
+        var kec = document.getElementById("kecamatan").value;
+        var kel = document.getElementById("kelurahan").value;
+        // var almt = document.getElementById("almt").value;
+
+        var url = "https://wa.me/6285758492957?text="
+
+            + "%20%20%20%20%20%20%20%20PAKET%20BISNIS%20BASIC%20%0A%0A"
+
+            // + "Jumlah%20Pesanan%20: " + jumlah + "%0a"
+            + "Nama%20: " + nama + "%0a"
+            + "Nomor%20: " + nomor + "%0a"
+            + "Prov%20: " + prov + "%0a"
+            + "Kab/kota%20: " + kota + "%0a"
+            + "Kacamatan%20: " + kec + "%0a"
+            + "Kelurahan%20: " + kel + "%0a"
+            // + "Alamat%20: " + almt + "%0a"
+            
+            ;
+
+        window.open(url, '_blank').focus();
+    }
+</script>
+    <script>
+      feather.replace();
+    </script>
+    <!-- My Javascript -->
+    <!-- <script src="js/script.js"></script> -->
+  </body>
+</html>
