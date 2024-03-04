@@ -550,7 +550,7 @@ width: 100%;
 }
 .contact {
   margin: 0;
-  padding: 40px;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -638,7 +638,7 @@ width: 100%;
 }
 /* Footer */
 footer {
-  
+  width: 100%;
   background-color: #000000;
   text-align: center;
   padding: 1rem 0 3rem;
@@ -832,6 +832,10 @@ font-size: 30px;
   }
   .menu p {
     font-size: 1.5rem;
+  }
+
+  .contact{
+    padding:0;
   }
 
   .contact .row {
