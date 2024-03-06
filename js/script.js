@@ -69,67 +69,61 @@ function myFunction() {
 // fitur alpine.js
 
 document.addEventListener("alpine:init", () => {
-  Alpine.data("menu", () => ({
+  Alpine.data("supplier", () => ({
     items: [
-      { id: 1, name: "Geprek Sambal Ijo", img: "ijo.jpg", price: 15000 },
-      { id: 2, name: "Geprek Sambal Pete", img: "pete.jpg", price: 15000 },
-      { id: 3, name: "Geprek Sambal Terasi", img: "terasi.jpg", price: 15000 },
-      { id: 4, name: "Geprek Sambal Matah", img: "matah.jpg", price: 15000 },
-      { id: 5, name: "Geprek Sambal Jontor", img: "jontor.jpg", price: 15000 },
-      { id: 6, name: "Geprek Sambal Ijo", img: "ijo.jpg", price: 15000 },
-      { id: 7, name: "Geprek Sambal Pete", img: "pete.jpg", price: 15000 },
-      { id: 8, name: "Geprek Sambal Terasi", img: "terasi.jpg", price: 15000 },
-      { id: 9, name: "Geprek Sambal Matah", img: "matah.jpg", price: 15000 },
-      { id: 10, name: "Geprek Sambal Jontor", img: "jontor.jpg", price: 15000 },
+      { id: 1, name: "BOGOR GAYA", img: "Bogor-gaya.webp", deskripsi:"cek" },
+      { id: 2, name: "Pabrik Baju Muslim", img: "Pabrik-Baju-Muslim.webp", deskripsi:"cek" },
+      { id: 3, name: "Toko Romantis Elektrik", img: "Toko-Romantis-Elektrik.webp", deskripsi:"cek" },
+     
     ],
   }));
-  Alpine.store("cart", {
-    items: [],
-    total: 0,
-    quantity: 0,
-    add(newItem) {
-      const cartItem = this.items.find((item) => item.id === newItem.id);
-
-      if (!cartItem) {
-        this.items.push({ ...newItem, quantity: 1, total: newItem.price });
-        this.quantity++;
-        this.total += newItem.price;
-      } else {
-        this.items = this.items.map((item) => {
-          if (item.id !== newItem.id) {
-            return item;
-          } else {
-            item.quantity++;
-            item.total = item.price * item.quantity;
-            this.quantity++;
-            this.total += item.price;
-            return item;
-          }
-        });
-      }
-    },
-    remove(id) {
-      const cartItem = this.items.find((item) => item.id === id);
-      if (cartItem.quantity > 1) {
-        this.items = this.items.map((item) => {
-          if (item.id !== id) {
-            return item;
-          } else {
-            item.quantity--;
-            item.total = item.price * item.quantity;
-            this.quantity--;
-            this.total -= item.price;
-            return item;
-          }
-        });
-      } else if (cartItem.quantity === 1) {
-        this.items = this.items.filter((item) => item.id !== id);
-        this.quantity--;
-        this.total -= cartItem.price;
-      }
-    },
-  });
 });
+// Alpine.store("cart", {
+//   items: [],
+//   total: 0,
+//   quantity: 0,
+//   add(newItem) {
+//     const cartItem = this.items.find((item) => item.id === newItem.id);
+
+//     if (!cartItem) {
+//       this.items.push({ ...newItem, quantity: 1, total: newItem.price });
+//       this.quantity++;
+//       this.total += newItem.price;
+//     } else {
+//       this.items = this.items.map((item) => {
+//         if (item.id !== newItem.id) {
+//           return item;
+//         } else {
+//           item.quantity++;
+//           item.total = item.price * item.quantity;
+//           this.quantity++;
+//           this.total += item.price;
+//           return item;
+//         }
+//       });
+//     }
+//   },
+//   remove(id) {
+//     const cartItem = this.items.find((item) => item.id === id);
+//     if (cartItem.quantity > 1) {
+//       this.items = this.items.map((item) => {
+//         if (item.id !== id) {
+//           return item;
+//         } else {
+//           item.quantity--;
+//           item.total = item.price * item.quantity;
+//           this.quantity--;
+//           this.total -= item.price;
+//           return item;
+//         }
+//       });
+//     } else if (cartItem.quantity === 1) {
+//       this.items = this.items.filter((item) => item.id !== id);
+//       this.quantity--;
+//       this.total -= cartItem.price;
+//     }
+//   },
+// });
 
 // konkonverensi ke rupiah
 const rupiah = (number) => {

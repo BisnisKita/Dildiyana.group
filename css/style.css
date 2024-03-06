@@ -570,7 +570,7 @@ width: 100%;
   flex-direction: column;
   align-items: center;
   max-width: 400px;
-  width: 100%;
+  width: 80%;
   border-radius: 50px;
   padding: 30px;
   border: 1px solid #ffffff40;
@@ -754,6 +754,8 @@ height: 8em;
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.6);
   }
+
+  
 
 
 .about h2{
