@@ -13,17 +13,17 @@ document.addEventListener("click", function (e) {
     navbarNav.classList.remove("active");
   }
 });
-// Toggle class active untuk shopping cart
-const shoppingCart = document.querySelector(".shopping-cart");
-document.querySelector("#shopping-cart-button").onclick = (e) => {
-  shoppingCart.classList.toggle("active");
-  e.preventDefault();
-};
-// togle
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
+// // Toggle class active untuk shopping cart
+// const shoppingCart = document.querySelector(".shopping-cart");
+// document.querySelector("#shopping-cart-button").onclick = (e) => {
+//   shoppingCart.classList.toggle("active");
+//   e.preventDefault();
+// };
+// // togle
+// function myFunction() {
+//   var popup = document.getElementById("myPopup");
+//   popup.classList.toggle("show");
+// }
 // Klik di luar elemen
 // const sc = document.querySelector("#shopping-cart-button");
 
@@ -68,16 +68,16 @@ function myFunction() {
 
 // fitur alpine.js
 
-document.addEventListener("alpine:init", () => {
-  Alpine.data("supplier", () => ({
-    items: [
-      { id: 1, name: "BOGOR GAYA", img: "Bogor-gaya.webp", deskripsi:"cek" },
-      { id: 2, name: "Pabrik Baju Muslim", img: "Pabrik-Baju-Muslim.webp", deskripsi:"cek" },
-      { id: 3, name: "Toko Romantis Elektrik", img: "Toko-Romantis-Elektrik.webp", deskripsi:"cek" },
+// document.addEventListener("alpine:init", () => {
+//   Alpine.data("supplier", () => ({
+//     items: [
+//       { id: 1, name: "BOGOR GAYA", img: "Bogor-gaya.webp", deskripsi:"cek" },
+//       { id: 2, name: "Pabrik Baju Muslim", img: "Pabrik-Baju-Muslim.webp", deskripsi:"cek" },
+//       { id: 3, name: "Toko Romantis Elektrik", img: "Toko-Romantis-Elektrik.webp", deskripsi:"cek" },
      
-    ],
-  }));
-});
+//     ],
+//   }));
+// });
 // Alpine.store("cart", {
 //   items: [],
 //   total: 0,
