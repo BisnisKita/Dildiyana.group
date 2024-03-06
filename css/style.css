@@ -192,7 +192,7 @@ body {
   background-size: 40rem;
   background-attachment: fixed;
   /* background-size: cover; */
-  margin: 0 4rem;
+  margin: 0;
   border-radius: 50px;
   display: flex;
   padding: 5rem;
@@ -204,20 +204,17 @@ body {
   margin-top: -50px;
   /* flex: 1 1 20rem; */
 }
-.about .row2 .about-img2 img{
-  width: 50%;
-  border-radius: 30px;
-  /* margin-top: -150px; */
-  
-  /* flex: 1 1 20rem; */
-}
+
 .about-img3 img {
   display: none;
   /* flex: 1 1 20rem; */
 }
 
 .about .row2 .about-img2 img{
+  box-shadow:1px 1px 20px 30px rgba(221, 255, 0, 0.535);
   width: 100%;
+  border-radius: 30px;
+  
 }
 .about .row1 .about-img img {
   margin-left: -50px;
@@ -236,7 +233,7 @@ body {
   border-radius: 30px;
   width: 70%;
   padding: 5rem 5rem;
-  box-shadow:1px 1px 10px 30px rgba(14, 178, 237, 0.5);
+  box-shadow:1px 1px 20px 30px rgba(221, 255, 0, 0.535);
 }
 .about .row2 .content2 {
   /* flex: 1 1 40rem; */
